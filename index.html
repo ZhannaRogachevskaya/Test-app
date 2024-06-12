@@ -16,7 +16,7 @@
                 <div class="main__content">
                     <h1>Демо-версия</h1>
                     <p>За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500 средних и малых проектов. Используя знания и накопленный опыт мы можем предложить </p>
-                    <button type="button" class="main__content-btn">Попробовать бесплатно <img src="./img/circle.svg" alt=""></button>
+                    <button type="button" id="main__content-btn" class="main__content-btn">Попробовать бесплатно <img src="./img/circle.svg" alt=""></button>
                 </div>
                 
             </div>
@@ -24,24 +24,27 @@
                 <img src="./img/main_img.svg" alt="">
             </div>
         </div>
-        <div class="wrapper__modal__window">
-            <div class="modal__window">
+        <div class="wrapper__modal__window" >
+            <div class="modal__window" id="window__enter" >
                 <h3>Войти в систему</h3>
-                <input type="tel" placeholder="Email/Телефон" class="modal__input">
-                <input type="password" placeholder="Email/Телефон" class="modal__input">
+                <input type="tel" placeholder="Email/Телефон" class="modal__input" id="login">
+                <input type="password" placeholder="Пароль" class="modal__input" id="password">
                 <label >
                     <input type="checkbox" name="save_name">
                     Запомнить пароль
                 </label>
                 <button type="button" class="recover">Восстановить</button>
                 <div class="modal__window-btns">
-                    <button class="enter">Войти</button>
+                    <button class="enter" id="btn-enter">Войти</button>
                     <button class="registr">Зарегистрироваться</button>
                 </div>
-                <button class="close"><img src="/img/x.svg"></button>
+                <button class="close" id="btn-close"><img src="/img/x.svg"></button>
             </div>
         </div>
     </div>
-    <script href="./script.js"></script>
+
+
+    
+    <script src="/script.js"></script>
 </body>
 </html>
