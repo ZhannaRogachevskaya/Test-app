@@ -12,8 +12,9 @@ button{
 }
 .wrapper{
     max-width: 1920px;
-    height: 100vh;
+    height: 527px;
     padding: 36px 40px;
+    margin: 0 auto;
 
 }
 .main__page{
@@ -24,8 +25,7 @@ button{
     display: flex;
 }
 .main__page-content{
-    margin-right: 24px;
-    width: 43.5%;
+    width: 50.5%;
     align-items: center;
     border-radius: 10px 0 0 10px;
 }
@@ -35,11 +35,11 @@ button{
     height: 100%;
 }
 .main__page-img{
-    width: 55.2%; 
+    width: 49.5%; 
     border-radius: 0 10px 10px 0;
 }
 .main__page-img img{
-    max-width: 89.5%;
+    max-width: 100%;
 }
 .main__content{
     width: 100%;
@@ -91,10 +91,15 @@ button{
     }
     .main__page-content{
         margin-right: 0px;
-        width: 50%;
     }
     .main__page-img{
-        width: 50%; 
+        background-image: url('./img/1440.svg');
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .main__page-img img{
+       width: 0;
     }
     .main__content{
         padding: 0 9%;
@@ -102,13 +107,11 @@ button{
     .main__content-btn{
         width: 63.3%;
     }
-    .main__page-img img{
-        max-width: 100%;
-    }
 }
 @media screen and (max-width: 768px){
     .wrapper{
         padding: 24px;
+        height: 634px;
     }
     .main__page{
         flex-direction: column;
@@ -165,6 +168,7 @@ button{
 }
 @media screen and (max-width: 375px){
     .wrapper{
+        height: 510px;
         padding: 14px 24px;
     }
     .main__content h1{
@@ -200,7 +204,7 @@ button{
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 24px;
